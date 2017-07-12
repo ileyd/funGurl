@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.muicss.com/examples/v1/example-layouts/landing-page/static/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table width="100%">
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title">funGurl — URL shortener</td>
+            <td align="right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a href="https://github.com/ileyd/funGurl">View Source</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center">
+      <div class="mui--appbar-height"></div>
+      <br>
+      <br>
+			<form class="mui-form" action="/shorten" method="post">
+			  <!--<legend>Title</legend>-->
+			  <div class="mui-textfield mui-textfield--float-label">
+			    <input type="text" id="longURL" name="longURL">
+			    <label>URL to shorten</label>
+			  </div>
+			  <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
+			</form>
+    </div>
+    <footer>
+      <div class="mui-container mui--text-center">
+        ♥ you all
+      </div>
+    </footer>
+  </body>
+</html>
